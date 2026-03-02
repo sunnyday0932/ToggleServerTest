@@ -1,0 +1,15 @@
+# Feature Toggle Server Local Environment
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: toggleserver-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
