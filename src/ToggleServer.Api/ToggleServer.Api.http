@@ -1,0 +1,6 @@
+@ToggleServer.Api_HostAddress = http://localhost:5098
+
+GET {{ToggleServer.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
